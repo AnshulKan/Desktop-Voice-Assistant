@@ -1,45 +1,65 @@
-# API Keys
-NEWS_API_KEY = "3fcddd458e6a4d1fb7c03624348cdb0d"
-WEATHER_API_KEY = "1c3e5931c9ed1ffce3b20dd766b1ba15"
+# ==============================================================================
+# CONFIGURATION FILE FOR DESKTOP VOICE ASSISTANT
+# ==============================================================================
+# Instructions:
+# 1. Fill in all the placeholder values (e.g., "YOUR_API_KEY").
+# 2. For email, generate an "App Password" from your Google Account settings.
+#    DO NOT use your regular email password here for security reasons.
+# 3. Save the file after filling in your details.
+# ==============================================================================
 
-# Spotify Credentials 
-SPOTIPY_CLIENT_ID = 'e4eb77f69de049949e9eb53a609d8f39'
-SPOTIPY_CLIENT_SECRET = 'faedcaa29af54ddd866001cc1b988519'
-SPOTIPY_REDIRECT_URI = 'http://127.0.0.1:8888/callback/' 
+# --- API Keys ---
+# Get your keys from:
+# News API: https://newsapi.org/
+# OpenWeatherMap API: https://openweathermap.org/api
+NEWS_API_KEY = "YOUR_NEWS_API_KEY"
+WEATHER_API_KEY = "YOUR_WEATHER_API_KEY"
 
-#APP PATHS
+# --- Spotify Credentials ---
+# Get your credentials from the Spotify Developer Dashboard:
+# https://developer.spotify.com/dashboard/
+SPOTIPY_CLIENT_ID = 'YOUR_SPOTIFY_CLIENT_ID'
+SPOTIPY_CLIENT_SECRET = 'YOUR_SPOTIFY_CLIENT_SECRET'
+SPOTIPY_REDIRECT_URI = 'http://127.0.0.1:8888/callback/'
+
+# --- Application Paths (Examples for Windows) ---
+# Update these paths to match the locations on your computer.
+# Use double backslashes (\\) for Windows paths.
 APP_PATHS = {
     "notepad": "C:\\Windows\\System32\\notepad.exe",
-    "vs code": "C:\\Users\\ANSHUL KANODIA\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe",
-    "browser": "C:\\Users\\ANSHUL KANODIA\\AppData\\Local\\BraveSoftware\\Brave-Browser\\Application\\brave.exe",
-    "camera": "microsoft.windows.camera:",
+    "vs code": "C:\\Users\\YourUsername\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe",
+    "browser": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
     "calculator": "C:\\Windows\\System32\\calc.exe"
 }
 
-#WEBSITE URLS
+# --- Website URLs ---
 WEBSITE_URLS = {
-    "google": "www.google.com",
-    "youtube": "www.youtube.com",
-    "linkedin": "www.linkedin.com",
-    "twitter": "twitter.com"
+    "google": "https://www.google.com",
+    "youtube": "https://www.youtube.com",
+    "linkedin": "https://www.linkedin.com",
+    "github": "https://www.github.com"
 }
 
+# --- To-Do List File ---
 TODO_FILE = "todo.txt"
-log_filename = "assistant_log.txt"
 
+# --- Email Configuration ---
 EMAIL_ACCOUNTS = {
     "personal": {
-    "address": "anshulkan65@gmail.com",
-    "password": "qnbgqjsypkpyzicm"
+        "address": "your_email@gmail.com",
+        "password": "YOUR_GMAIL_APP_PASSWORD" # Use an App Password, not your regular password
     },
-    "work": {
-    "address": "anshulkan65@gmail.com",
-    "password": "qnbgqjsypkpyzicm"
-    }
+    # You can add more accounts if needed
+    # "work": {
+    # "address": "your_work_email@example.com",
+    # "password": "YOUR_WORK_APP_PASSWORD"
+    # }
 }
+
+# --- Email Contacts ---
+# Add names and email addresses for quick access
 CONTACTS = {
     "test contact": "recipient_email@example.com",
-    "anshul" : "anshulkanodia3560@gmail.com",
-    "one" : "anshulkanodia3560@gmail.com"
-
+    "team lead": "lead_email@example.com",
+    "friend": "friend_email@example.com"
 }
