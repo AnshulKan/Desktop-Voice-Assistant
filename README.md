@@ -1,113 +1,97 @@
-# Desktop Voice Assistant
-
+Desktop Voice Assistant
 A powerful, command-line-based voice assistant for Windows, built with Python. This assistant is designed to enhance productivity and automate common desktop tasks, providing a hands-free interface for controlling your computer, fetching real-time information, and managing your daily workflow.
 
-## Features & Commands
-
+Features & Commands
 The assistant is capable of understanding a wide range of commands. Here is a list of its functions and how to use them.
 
-### ℹ️ Information Retrieval
+ℹ️ Information Retrieval
+Get Time/Date: "What time is it?" / "What is the date today?"
 
-** * Get Time/Date: "What time is it?" / "What is the date today?"**
+Get Weather: "What's the weather in London?"
 
-** * Get Weather: "What's the weather in London?"**
+Get News: "Tell me the latest news"
 
-** * Get News: "Tell me the latest news"**
+Search Wikipedia: "Wikipedia Python programming language"
 
-** * Search Wikipedia: "Wikipedia Python programming language"**
+Web Search: "Search for VIT Bhopal University"
 
-** * Web Search: "Search for VIT Bhopal University"**
+Tell a Joke: "Tell me a joke"
 
-** * Tell a Joke: "Tell me a joke"**
+🚀 Productivity
+Add To-Do: "Add 'prepare for project demo' to my to-do list"
 
-### 🚀 Productivity
+Show To-Do List: "Show me my list"
 
-** * Add To-Do: "Add 'prepare for project demo' to my to-do list"**
+Set Timer: "Set a timer for 30 seconds" / "Timer for 1 minute"
 
-** * Show To-Do List: "Show me my list"**
+Calculator: "Calculate 15 times 20"
 
-** * Set Timer: "Set a timer for 30 seconds" / "Timer for 1 minute"**
+Send Email: "Send email" (This will start an interactive session)
 
-** * Calculator: "Calculate 15 times 20"**
+⚙️ System & Application Control
+Open Application: "Open notepad" / "Open vs code"
 
-** * Send Email: "Send email" (This will start an interactive session)**
+Open Website: "Open website youtube"
 
-### ⚙️ System & Application Control
+Set Volume: "Set volume to 70"
 
-** * Open Application: "Open notepad" / "Open vs code"**
+Set Brightness: "Set brightness to 80"
 
-** * Open Website: "Open website youtube"**
+Take Screenshot: "Take a screenshot"
 
-** * Set Volume: "Set volume to 70"**
+System Power: "Shutdown computer" / "Restart computer"
 
-** * Set Brightness: "Set brightness to 80"**
+🎵 Media Control (Spotify)
+Play Music: "Play music Blinding Lights"
 
-** * Take Screenshot: "Take a screenshot"**
+Pause Music: "Pause music"
 
-** * System Power: "Shutdown computer" / "Restart computer"**
+Next Track: "Next track"
 
-### 🎵 Media Control (Spotify)
-
-** * Play Music: "Play music Blinding Lights"**
-
-** * Pause Music: "Pause music"**
-
-** * Next Track: "Next track"**
-
-## Setup and Installation
-
+Setup and Installation
 Follow these steps to get the assistant running on your local machine.
 
-### 1. Prerequisites
+1. Prerequisites
+Python 3.8+
 
-** * Python 3.8+ **
+A working microphone.
 
-** * A working microphone.**
+A Windows 10/11 operating system.
 
-** * A Windows 10/11 operating system.**
+A stable internet connection (required for speech recognition and API commands).
 
-** * A stable internet connection (required for speech recognition and API commands).**
-
-### 2. Clone the Repository
-
-**```
-git clone https://github.com/your-username/desktop-voice-assistant.git
+2. Clone the Repository
+git clone [https://github.com/your-username/desktop-voice-assistant.git](https://github.com/your-username/desktop-voice-assistant.git)
 cd desktop-voice-assistant
 
+3. Install Dependencies
+It is highly recommended to use a Python virtual environment to manage dependencies.
 
-**### 3. Install Dependencies**
-
-**It is highly recommended to use a Python virtual environment to manage dependencies.**
-
-**```
 # Create and activate a virtual environment
 python -m venv venv
 .\venv\Scripts\activate
 
 # Install the required packages from the requirements file
 pip install -r requirements.txt
-```**
 
-***(Note: A `requirements.txt` file should be created containing all the libraries listed in your project report, such as `SpeechRecognition`, `pyttsx3`, `requests`, etc.)***
+(Note: A requirements.txt file should be created containing all the libraries listed in your project report, such as SpeechRecognition, pyttsx3, requests, etc.)
 
-**### 4. Configure the Assistant**
+4. Configure the Assistant
+Before running, you must add your personal API keys and credentials to the config.py file.
 
-**Before running, you must add your personal API keys and credentials to the `config.py` file.**
+Weather API: Get a free API key from OpenWeatherMap.
 
-**1. **Weather API:** Get a free API key from [OpenWeatherMap](https://openweathermap.org/api).**
+News API: Get a free API key from NewsAPI.org.
 
-**2. **News API:** Get a free API key from [NewsAPI.org](https://newsapi.org/).**
+Spotify: Create a new application on the Spotify Developer Dashboard to get your Client ID, Client Secret, and set your Redirect URI (use http://127.0.0.1:8888/callback/).
 
-**3. **Spotify:** Create a new application on the [Spotify Developer Dashboard](https://developer.spotify.com/dashboard/) to get your `Client ID`, `Client Secret`, and set your `Redirect URI` (use `http://1227.0.0.1:8888/callback/`).**
+Email: Enter your email address and an "App Password" for the account you want to send emails from. Do not use your regular password. You can generate an App Password in your Google Account's security settings.
 
-**4. **Email:** Enter your email address and an **"App Password"** for the account you want to send emails from. **Do not use your regular password.** You can generate an App Password in your Google Account's security settings.**
+Fill in all the required placeholder fields in the config.py file.
 
-**Fill in all the required placeholder fields in the `config.py` file.**
+Usage
+Once the installation and configuration are complete, simply run the main.py script from your terminal:
 
-**## Usage**
-
-**Once the installation and configuration are complete, simply run the `main.py` script from your terminal:**
-
-**```
 python main.py
-```**
+
+The assistant will greet you, and you can begin giving it commands. To stop the assistant, say "goodbye" or press Ctrl+C in the terminal.
