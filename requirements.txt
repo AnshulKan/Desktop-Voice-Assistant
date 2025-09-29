@@ -1,0 +1,10 @@
+pyttsx3
+SpeechRecognition
+pyaudio
+wikipedia
+requests
+pyjokes
+pyautogui
+spotipy
+pycaw
+screen-brightness-control
