@@ -1,10 +1,10 @@
-pyttsx3
 SpeechRecognition
-pyaudio
-wikipedia
+pyttsx3
 requests
+wikipedia
 pyjokes
 pyautogui
-spotipy
 pycaw
+comtypes
 screen-brightness-control
+spotipy
