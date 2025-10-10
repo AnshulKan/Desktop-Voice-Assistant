@@ -83,3 +83,23 @@ Fill in all the required placeholder fields in the config.py file.
 Once the installation and configuration are complete, simply run the main.py script from your terminal:
 
 python main.py  
+
+## 📌Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## 📌Author
+
+👤 **Anshul Kanodia**
+
+- Github: [@AnshulKan](https://github.com/AnshulKan)
+- LinkedIn: [@Anshul-Kanodia](https://www.linkedin.com/in/anshulkanodia/)
+- Portfolio: [@Anshul-Kanodia](https://anshulkan.vercel.app/)
+
+## 📌Show your support
+
+Please ⭐️ this repository if this project helped you!
+
+## 📌License
+
+This project is [MIT](https://choosealicense.com/licenses/mit/) licensed.
